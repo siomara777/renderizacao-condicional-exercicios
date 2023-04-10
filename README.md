@@ -32,13 +32,13 @@ Já existe uma tela de Cadastro para as informações de login da pessoa, então
     - Um input para número da residência
     - um input para complemento
     - um input para telefone
-    - um botão de Confirmar (que renderiza a tela principal)
+    - um botão de Confirmar
 
 # Exercício 2
 ## Colocando a mão na massa para o Exercício 2.
 
-- Continue o exercício feito na aula e adicione o componente criado **TelaCadastroEndereco** para seguir o fluxo da renderização condicional, ela deve aparecer depois de cadastrar as informações de login do usuário, o fluxo de páginas deve ocorrer da seguinte ordem: 
-    - TelaLogin >>> TelaCadastro >>> TelaCadastroEndereco >>> TelaPrincipal
+- Adicione o componente criado **TelaCadastroEndereco** para seguir o fluxo da renderização condicional. O fluxo de telas em um cadastro deve ocorrer na seguinte ordem: 
+    - TelaCadastro >>> TelaCadastroEndereco >>> TelaPrincipal
 
 # Segue o link do template no codesandbox
 https://codesandbox.io/s/renderizacao-condicional-exercicios-5ebrrb
