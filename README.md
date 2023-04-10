@@ -39,7 +39,7 @@ Já existe uma tela de Cadastro para as informações de login da pessoa, então
     
 # Exercício 3
 
-Implemente o controle dos inputs e faça com que o botão **Entrar** e o botão **Cadastrar** imprimam no console os dados preenchidos em um único objeto (cada input será uma propriedade do mesmo).
+Implemente o controle dos inputs e faça com que o botão **Entrar**, o botão **Cadastrar** e o botão **Confirmar** imprimam no console os dados preenchidos nos inputs em um único objeto (cada input será uma propriedade do mesmo).
 
 # Segue o link do template no codesandbox
 https://codesandbox.io/s/renderizacao-condicional-exercicios-5ebrrb
