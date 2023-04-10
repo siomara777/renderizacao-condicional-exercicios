@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
 export const FormContainer = styled.div`
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 200px;
+
+  h1 {
+    margin: 32px;
+  }
 `;
 
 export const Form = styled.div`
-  width: 40vw;
-  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +26,7 @@ export const Input = styled.input`
 `;
 
 export const SendButton = styled.button`
-  background-color: #ff4400;
+  background-color: #ff9421;
   border-radius: 8px;
   padding: 16px;
   width: 200px;
@@ -32,19 +34,20 @@ export const SendButton = styled.button`
   color: white;
   margin-top: 32px;
   cursor: pointer;
+  font-weight: bold;
 `;
 
 export const BackToLoginButton = styled.button`
-    background-color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 200px;
-    padding: 10px;
-    :hover{
-        background-color: black;
-        color: white;
-    }
-`
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 200px;
+  padding: 10px;
+  :hover {
+    background-color: black;
+    color: white;
+  }
+`;
 
 export const StyledLabel = styled.label`
   width: 300px;

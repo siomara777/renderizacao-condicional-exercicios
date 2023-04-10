@@ -1,11 +1,15 @@
+import { useState } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import TelaLogin from "./components/TelaLogin/TelaLogin";
 import TelaCadastro from "./components/TelaCadastro/TelaCadastro";
-import TelaUsuarioCadastrado from "./components/TelaUsuarioCadastrado/TelaUsuarioCadastrado.js";
-import { useState } from "react";
+import TelaPrincipal from "./components/TelaPrincipal/TelaPrincipal.js";
 
 const GlobalStyled = createGlobalStyle`
-  *{
+  html {
+    font-family: sans-serif9;
+  }
+
+  * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,27 +20,32 @@ const MainContainer = styled.main`
 `
 
 function App() {
-  const [valorCondicional, setValorCondicional] = useState(1)
+  const [telaAtual, setTelaAtual] = useState("TelaLogin")
 
-  const mudarTela = (valor) => {
-    setValorCondicional(valor)
+  const mudarTela = (novaTela) => {
+    setTelaAtual(novaTela)
   }
 
-  // Resolução do exercício de fixação
   const renderizaTela = () => {
-    switch (valorCondicional) {
-      case 1:
+    switch (telaAtual) {
+      case "TelaLogin":
         return <TelaLogin mudarTela={mudarTela} />;
-      case 2:
+
+      case "TelaCadastro":
         return <TelaCadastro mudarTela={mudarTela} />;
-      case 3:
-        return <TelaUsuarioCadastrado />
+
+      case "TelaPrincipal":
+        return <TelaPrincipal mudarTela={mudarTela} />
+
+      default:
+        return <p>Tela inválida</p>
     }
   }
 
   return (
     <MainContainer >
       <GlobalStyled />
+
       {renderizaTela()}
     </MainContainer>
   );
