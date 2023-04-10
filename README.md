@@ -15,35 +15,30 @@ Caso queira criar uma nova aplicação React, basta copiar os conteúdos deste r
 
 Na aula vimos que o gerenciamento de estado precisa ser pensado de uma forma que seja possível compartilhar dados entre todos os componentes da nossa aplicação. Às vezes precisamos modificar toda a estrutura de estados para que seja possível resolver certos problemas de props, já que só podemos passar props de pai pra filho.
 
-Durante a aula vocês conseguiram trabalhar a troca de páginas por meio da renderização condicional. Agora vamos implementar mais uma página na aplicação
+Durante a aula vocês conseguiram trabalhar a troca de telas por meio da renderização condicional. Agora vamos implementar mais uma tela na aplicação
 
 # Exercício 1
 
 ## Colocando a mão na massa para o exercício 1: 
 
-Nossa aplicação vai ser para o cadastro do usuário em um aplicativo de delivery, já existe uma tela de Cadastro para as informações de login do usuário na aplicação como vocês viram, agora vamos criar mais um componente de cadastro chamado TelaCadastroEndereco, onde vocês vão pegar as informações de contato e endereço do usuário:
+Nossa aplicação vai ser para o cadastro do usuário em um aplicativo de delivery.<br>
+Já existe uma tela de Cadastro para as informações de login da pessoa, então vamos criar um componente de cadastro chamado TelaCadastroEndereco, onde vocês vão pegar mais informações de contato e endereço para entrega:
 
 - Crie uma pasta dentro da pasta Components chamada TelaCadastroEndereco
-- Crie um arquivo chamado TelaCadastroEndereco
+- Crie um arquivo chamado TelaCadastroEndereco.js
 - Crie a estrutura de um componente dentro do arquivo (lembre de exportar o componente)
-- Á página vai precisar ter:
+- O componente deve possuir:
     - Um input para endereço
     - Um input para número da residência
-    - um input para telefone
     - um input para complemento
-    - um botão para ser usado para passar a próxima página
+    - um input para telefone
+    - um botão de Confirmar (que renderiza a tela principal)
 
 # Exercício 2
 ## Colocando a mão na massa para o Exercício 2.
 
 - Continue o exercício feito na aula e adicione o componente criado **TelaCadastroEndereco** para seguir o fluxo da renderização condicional, ela deve aparecer depois de cadastrar as informações de login do usuário, o fluxo de páginas deve ocorrer da seguinte ordem: 
-    - TelaLogin >>> TelaCadastro >>> TelaCadastroEndereco >>> TelaUsuarioCadastrado
-
-
-
-
-
-
+    - TelaLogin >>> TelaCadastro >>> TelaCadastroEndereco >>> TelaPrincipal
 
 # Segue o link do template no codesandbox
 https://codesandbox.io/s/renderizacao-condicional-exercicios-5ebrrb
