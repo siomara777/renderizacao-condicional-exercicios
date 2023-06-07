@@ -3,6 +3,9 @@ import styled, { createGlobalStyle } from "styled-components";
 import TelaLogin from "./components/TelaLogin/TelaLogin";
 import TelaCadastro from "./components/TelaCadastro/TelaCadastro";
 import TelaPrincipal from "./components/TelaPrincipal/TelaPrincipal.js";
+import TelaCadastroEndereco from "./components/TelaCadastroEndereco/TelaCadastroEndereco.jsx"
+
+
 
 const GlobalStyled = createGlobalStyle`
   html {
@@ -36,6 +39,9 @@ function App() {
 
       case "TelaPrincipal":
         return <TelaPrincipal mudarTela={mudarTela} />
+
+        case "TelaCadastroEndereco":
+          return <TelaCadastroEndereco mudarTela={mudarTela} />
 
       default:
         return <p>Tela inválida</p>
